@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f7f7;
+    
+}
+
+.container{
+    background-color:#ffffff;
+    box-shadow: 0 0 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 600px;
+    border-radius: 20px;
+    
+}
+
+
+form{
+   margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+form input[type=text]{
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+form input[type=submit]{
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+form input[type=submit]:hover{
+    background-color: rgb(28, 28, 199);
+    color: aqua;
+    cursor: pointer;
+    transition: 2s ease;
+}
+.icon img{
+    height: 100%;
+    width: 20%;
+    background-repeat: no-repeat;
+}
+.temprature{
+    margin:20px 0px;
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+.humadity{
+    font-size: 20px;
+    
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.details div{
+    padding: 20px;
+    background-color: bisque;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 50px;
+}
+@media(max-width: 786px){
+    form{
+        flex-direction: column;
+    }
+    form input[type=text]{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
